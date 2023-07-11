@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,57 +9,75 @@
     <title> Ingreso y Egresos mensuales </title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+
+
     <div class="form">
         <fieldset>
             <h1>Ingreso y Egresos mensuales</h1>
-            <form>
+            <form action="" id="form">
                 <div>
                     <label for="dinero">Sueldo a cobrar:
                         <input type="number" placeholder="Ingrese el dinero a Cobrar" id="dinero">
-                        
+
                     </label>
                 </div>
                 <div>
                     <label for="costo-fijo">Luz:
                         <input type="number" placeholder="Ingrese Monto luz mensual" id="luz">
-                        
+
+
                     </label>
                     <label for="costo-fijo">Gas:
                         <input type="number" placeholder="Ingrese Monto gas mensual" id="gas">
-                        
+
                     </label>
                     <label for="costo-fijo">Internet:
                         <input type="number" placeholder="Ingrese Monto internet mensual" id="internet">
-                        
+
                     </label>
                     <label for="costo-fijo">Celular:
                         <input type="number" placeholder="Ingrese Monto celular mensual" id="celular">
-                        
+
                     </label>
                     <label for="costo-fijo">Supermercado:
                         <input type="number" placeholder="Ingrese Monto supermercado mensual" id="supermercado">
-                        
+
                     </label>
-                   
+                    <label for="costo-fijo">Alquiler:
+                        <input type="number" placeholder="Ingrese Monto alquiler mensual" id="alquiler">
+
+                    </label>
+                    <label for="costo-fijo">Tarjeta:
+                        <input type="number" placeholder="Ingrese Monto tarjeta mensual" id="tarjeta">
+
+                    </label>
+                    <label for="costo-fijo">Salidas:
+                        <input type="number" placeholder="Ingrese Monto salida" id="salidas">
+
+                    </label>
 
                 </div>
                 <div>
                     <table class="tab row">
-                        <input type="button" onClick="costos()" Value="Calcular costos fijos" />
-                         
-                                <p>Total Costos fijos
-                                  
-                                    <span id = "result"></span>
-                                    <p>Total sueldo-costos fijos
-                                      <span id = "result1"></span>
+                        <input type="button" onClick="costos()"  Value="Calcular costos fijos" />
 
+                        <p>Total Costos fijos:
+                            <span id="result"></span>
+                        <p>Total sueldo-costos fijos:
+                            <span id="result1"></span>
+                        <p>Porcentaje costos/sueldos:
+                            <span id="result2"></span>
+                        <p>Porcentaje salidas/sueldo:
+                            <span id="result3"></span>
                      
-                                
-                                 
+
+                      
 
 
-           
-    <script src="./entrega/costos.js"></script>
+
+                            <script src="./entrega/costos.js"></script>
 </body>
+
 </html>
