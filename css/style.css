@@ -27,6 +27,9 @@ label {
     border: 2px;
 }
 
+
+ 
+
 input {
     width: 300px;
     margin-bottom: 10px;
@@ -34,6 +37,9 @@ input {
     margin-right: -6px;
     background-color: #fdfef7;
     border: #173441 1.8px solid;
+    
+    
+    
 }
 
 fieldset {
