@@ -1,16 +1,34 @@
-let mail = prompt('Cual es tu mail?');
- 
- 
+const validarEmail = (email) => {
+  if (!isNaN(email) || email === null || email === '' || (email !== null && email.trim() === '') || email.length < 5 || !email.includes('@') || !email.includes('.com')) {
+    alert('Por favor, introduzca un email válido con al menos 5 caracteres y que contenga "@" y ".com".');
+    return false;
+  } else {
+    return true;
+  }
+};
+
+const pedirMail = () => {
+  let mail = prompt('Cuál es tu mail?');
+
+  if (validarEmail(mail)) {
+    confirm('Genial, continuemos!');
+  } else {
+    pedirMail();
+  }
+};
+
+pedirMail();
+
+
+
+
 
 const options1 = { style: 'currency', currency: 'USD' };
 const numberFormat1 = new Intl.NumberFormat('en-US', options1);
  
 
-
-
 function costos() {
 
-  
   let costoluz = document.getElementById("luz").value;
   let costogas = document.getElementById('gas').value;
   let internet = document.getElementById('internet').value;
@@ -21,7 +39,6 @@ function costos() {
   let tarjeta = document.getElementById("tarjeta").value;
   let salidas = document.getElementById("salidas").value;
   let sueldoscostos = parseFloat(sueldo) - parseFloat(costoluz) - parseFloat(costogas) - parseFloat(internet) - parseFloat(celular) - parseFloat(supermercado);
-
 
 
 
