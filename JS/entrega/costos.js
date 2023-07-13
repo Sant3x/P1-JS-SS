@@ -43,17 +43,16 @@ function costos() {
 
 
 
-  let sumatatoria = (parseFloat(tarjeta) + parseFloat(alquiler) + parseFloat(costoluz) + parseFloat(costogas) + parseFloat(internet) + parseFloat(celular) + parseFloat(supermercado) + parseFloat(salidas))
+  let sumatatoria = (parseFloat(tarjeta) + parseFloat(alquiler) + parseFloat(costoluz) + parseFloat(costogas) + parseFloat(internet) + parseFloat(celular) + parseFloat(supermercado))
   let salidascostos = (salidas / sueldo).toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 2 });
   let costos = (sumatatoria / sueldo).toLocaleString(undefined, { style: 'percent', minimumFractionDigits: 2 });
   result.innerHTML = (numberFormat1.format(sumatatoria));
   result2.innerHTML = (costos);
   result1.innerHTML = (numberFormat1.format(sueldoscostos));
   result3.innerHTML = (salidascostos);
-  result4.innerHTML = (getRawData);
+  result4.innerHTML = (numberFormat1.format(salidas));
 
 }
-
 
 
 
