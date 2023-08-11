@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./entrega/costos.js"></script>
     <script src="https://kit.fontawesome.com/3c44aa10f3.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title> Ingreso y Egresos mensuales </title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-
-
+  
+ 
     <div class="form">
         <fieldset>
             <h1>Ingreso y Egresos mensuales</h1>
-            <form action="" id="form">
+            <form action=""  id="form"> 
                 <div>
                     <label for="dinero">Sueldo a cobrar:
                         <input type="number" placeholder="Ingrese el dinero a Cobrar" id="dinero">
@@ -57,17 +59,20 @@
                         <input type="number" placeholder="Ingrese Monto salida" id="salidas">
 
                     </label>
+                
 
                 </div>
                 <div>
                     <table class="tab row">
-                        <input type="button" onClick="costos()"  Value="Calcular costos fijos" />
+                        <input type="button" onClick="costos()" Value="Calcular" />
 
+                        <p>Inflacion Anual   🇦🇷
+                        
+                            <span id="result5"></span>
                         <p>Total Costos fijos:
                             <span id="result"></span>
-                            <p>Total Costos Variables:
-                                <span id="result4"></span>
-
+                        <p>Total Costos Variables:
+                            <span id="result4"></span>
 
 
                         <p>Total sueldo-costos fijos:
@@ -76,13 +81,11 @@
                             <span id="result2"></span>
                         <p>Porcentaje salidas/sueldo:
                             <span id="result3"></span>
-                     
 
-                      
+                            <input type="reset" onClick="clearSpan();remover()" Value="Remover datos" />
 
+                            
 
-
-                            <script src="./entrega/costos.js"></script>
 </body>
 
 </html>
